@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="科研作图, Physics">
+    <meta name="keywords" content="X.-Z. CHEN">
     <meta name="description" content="Share and Win">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -376,7 +376,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    729
+                    801
                 </div>
                 
 
@@ -394,36 +394,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>文本测试，密码测试，图片测试，代码测试。。。文本测试，密码测试，图片测试，代码测试。。。文本测试，密码测试，图片测试，代码测试。。。文本测试，密码测试，图片测试，代码测试。。。文本测试，密码测试，图片测试，代码测试。。。文本测试，密码测试，图片测试，代码测试。。。文本测试，密码测试，图片测试，代码测试。。。</p>
-<pre class=" language-lang-python"><code class="language-lang-python">import pybinding as pb
-import numpy as np
-import matplotlib.pyplot as plt
-
-pb.pltutils.use_style()
-</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre class=" language-hljs python"><span class="hljs-keyword">import</span> pybinding <span class="hljs-keyword">as</span> pb<br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword"><code class="language-hljs python"><span class="hljs-keyword">import</span> pybinding <span class="hljs-keyword">as</span> pb<br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><br>pb.pltutils.use_style()<br></code></pre></td></tr></table></figure>
 <p><code>pb</code>习惯被用来导入pybinding。和习惯用<code>np</code>以及<code>plt</code>的用法一样。</p>
 <p>函数<code>pb.pltutils.use_style()</code>应用的是pybinding对matplotlib默认的的设置类型。画图方面是非常的个性化。</p>
 <h3 id="Lattice"><a href="#Lattice" class="headerlink" title="Lattice"></a>Lattice</h3><p><code>Lattice</code>单元是用来描述晶体晶格。其中包含了子晶格的基本的矢量，位置以及连接子晶格点的耦合参数。所有的这些信息都可以用转移来构建大系统。</p>
 <h4 id="Square-Lattice"><a href="#Square-Lattice" class="headerlink" title="Square Lattice"></a>Square Lattice</h4><p>从这些基本元素中，我们可以构建一个简单的方形格点</p>
-<pre class=" language-lang-python"><code class="language-lang-python">import pybinding as pb
-
-d = 0.2 # [nm] unit cell length
-t = 1   # [eV] hopping energy
-
-# create a simple 2D lattice with vectors a1 and a2
-lattice = pb.Lattice(a1=[d,0],a2=[0,d])
-lattice.add_sublattices(
-    ('A',[0,0]) # add an atom called 'A' at position [0,0]
-)
-lattice.add_hoppings(
-    # (relative_index, from_sublattice, to_sublattice, energy)
-    ([0,1],'A','A',t)
-    ([1,0],'A','A',t)
-)
-</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre class=" language-hljs python"><span class="hljs-keyword">import</span> pybinding <span class="hljs-keyword">as</span> pb<br><br>d = <span class="hljs-number">0.2</span> <span class="hljs-comment"># [nm] unit cell length</span><br>t = <span class="hljs-number">1</span>   <span class="hljs-comment"># [eV] hopping energy</span><br><br><span class="hljs-comment"># create a simple 2D lattice with vectors a1 and a2</span><br>lattice = pb.Lattice(a1=[d,<span class="hljs-number">0</span>],a2=[<span class="hljs-number">0</span>,d])<br>lattice.add_sublattices(<br>	(<span class="hljs-string">'A'</span>,[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]) <span class="hljs-comment"># add an atom called 'A' at position [0,0]</span><br>)<br>lattice.add_hoppings(<br>	<span class="hljs-comment"># (relative_index, from_sublattice, to_sublattice, energy)</span><br>    ([<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],<span class="hljs-string">'A'</span>,<span class="hljs-string">'A'</span>,t)<br>    ([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>],<span class="hljs-string">'A'</span>,<span class="hljs-string"><code class="language-hljs python"><span class="hljs-keyword">import</span> pybinding <span class="hljs-keyword">as</span> pb<br><br>d = <span class="hljs-number">0.2</span> <span class="hljs-comment"># [nm] unit cell length</span><br>t = <span class="hljs-number">1</span>   <span class="hljs-comment"># [eV] hopping energy</span><br><br><span class="hljs-comment"># create a simple 2D lattice with vectors a1 and a2</span><br>lattice = pb.Lattice(a1=[d,<span class="hljs-number">0</span>],a2=[<span class="hljs-number">0</span>,d])<br>lattice.add_sublattices(<br>	(<span class="hljs-string">'A'</span>,[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]) <span class="hljs-comment"># add an atom called 'A' at position [0,0]</span><br>)<br>lattice.add_hoppings(<br>	<span class="hljs-comment"># (relative_index, from_sublattice, to_sublattice, energy)</span><br>    ([<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],<span class="hljs-string">'A'</span>,<span class="hljs-string">'A'</span>,t)<br>    ([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>],<span class="hljs-string">'A'</span>,<span class="hljs-string">'A'</span>,t)<br>)<br></code></pre></td></tr></table></figure>
 <p>但是这个还是不能马上看到代码干了什么。幸运的是，<code>Lattice</code>语句有一个很方面的<code>Lattice.plot()</code>方法可以很容易的看到晶格的构建。</p>
-<pre class=" language-lang-python"><code class="language-lang-python">lattice.plot() # plot the lattice that was just constructed
-plt.show()     # standard matplotlib show() function
-</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre class=" language-hljs python">lattice.plot() <span class="hljs-comment"># plot the lattice that was just constructed</span><br>plt.show()     <span class="hljs-comment"><code class="language-hljs python">lattice.plot() <span class="hljs-comment"># plot the lattice that was just constructed</span><br>plt.show()     <span class="hljs-comment"># standard matplotlib show() function</span><br></code></pre></td></tr></table></figure>
 <p><img src="/2024/04/22/ke-yan-zuo-tu/sublattice.jpg" alt="pybinding的sublattice的构建过程"></p>
 <p>在上图中，我们看到晶格矢量$\mathbf{a}_1$和$\mathbf{a}_2$被用来去初始化<code>Lattice</code>。这些矢量描述了一个拥有无限位置设置的布拉维晶格</p>
 <script type="math/tex; mode=display">
