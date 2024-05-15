@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="majorana">
+    <meta name="keywords" content="post article">
     <meta name="description" content="Share and Win">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Majorana Basics | ZhouGroupGS@EIT</title>
+    <title>How to post your article? | ZhouGroupGS@EIT</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -202,7 +202,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '303253e60da6fc475707eae581e60f62f5ea326f83cc9de8c9d378e91f76a274';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -215,12 +215,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/27.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Majorana Basics</h1>
+                    <h1 class="description center-align post-title">How to post your article?</h1>
                 </div>
             </div>
         </div>
@@ -353,8 +353,8 @@
                                 科研教程
                             </a>
                         
-                            <a href="/categories/ZhouGroup/" class="post-category">
-                                ZhouGroup
+                            <a href="/categories/X-Z-Chen/" class="post-category">
+                                X.-Z. Chen
                             </a>
                         
                     </div>
@@ -392,42 +392,139 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1-Basic-knowledga-of-topology-and-quantum-computing"><a href="#1-Basic-knowledga-of-topology-and-quantum-computing" class="headerlink" title="1. Basic knowledga of topology and quantum computing"></a>1. Basic knowledga of topology and quantum computing</h1><ul>
-<li>Review paper from Roman, <a href="https://link.springer.com/article/10.1393/ncr/i2017-10141-9" target="_blank" rel="noopener">weblink</a>, <a href="https://arxiv.org/pdf/1711.00011" target="_blank" rel="noopener">PDF</a></li>
-<li>Online course on topology in condensed matter: From Kitaev chain to a nanowire, <a href="https://topocondmat.org/w2_majorana/nanowire.html" target="_blank" rel="noopener">weblink</a></li>
-<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/9b5182f8bf1ea14d1ac95b25cf2aa4dd27749554/Codes/GroupSource/TZSeminar_Slides.pdf" target="_blank" rel="noopener">GSppt: Topology Matters: From Transport to Quantum Computing, by T. Zhou</a></li>
-</ul>
-<h2 id="1-1-Nanowire-system"><a href="#1-1-Nanowire-system" class="headerlink" title="1.1 Nanowire system"></a>1.1 Nanowire system</h2><h3 id="Computational-methods"><a href="#Computational-methods" class="headerlink" title="Computational methods:"></a>Computational methods:</h3><ul>
-<li><p>Infinite system with translational symmetry: Topological conditions, Topological invariants, <a href="https://gitlab.kwant-project.org/kwant/minicourse/-/blob/master/3_advanced_concepts.md" target="_blank" rel="noopener">weblink</a></p>
-<ul>
-<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/8579fee2f70a4716bfa163e8dca1775129883444/Codes/GroupSource/Nanowire_1D_finite_workshop.ipynb" target="_blank" rel="noopener">code: Nanowire_1D_inifinite_workshop.ipynb</a></li>
-<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/8579fee2f70a4716bfa163e8dca1775129883444/Codes/GroupSource/Nanowire_1D_inifinite_workshop.ipynb" target="_blank" rel="noopener">code: Nanowire_1D_finite_workshop.ipynb</a></li>
-</ul>
-</li>
-<li><p>Finite system: Majorana zero modes</p>
-<ul>
-<li><a href="https://iopscience.iop.org/article/10.1088/1367-2630/16/6/063065/pdf" target="_blank" rel="noopener">Codes in New J. Phys. 16 (2014) 063065</a></li>
-<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/8579fee2f70a4716bfa163e8dca1775129883444/Codes/GroupSource/Nanowire_1D_finite_paperexample.ipynb" target="_blank" rel="noopener">code: Nanowire_1D_finite_paperexample.ipynb</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="1-2-Planar-Josephson-junctions"><a href="#1-2-Planar-Josephson-junctions" class="headerlink" title="1.2 Planar Josephson junctions"></a>1.2 Planar Josephson junctions</h2><h3 id="Warm-up-Publications"><a href="#Warm-up-Publications" class="headerlink" title="Warm-up Publications"></a>Warm-up Publications</h3><ul>
-<li>Theory: <a href="https://journals.aps.org/prx/pdf/10.1103/PhysRevX.7.021032" target="_blank" rel="noopener">PRX 7, 021032 (2017)</a>; <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.107701" target="_blank" rel="noopener">PRL 118, 107701 (2017)</a></li>
-<li>Experiments: <a href="https://www.nature.com/articles/s41586-019-1068-8" target="_blank" rel="noopener">Nature 569, 89 (2019)</a><a href="https://arxiv.org/abs/1809.03037" target="_blank" rel="noopener">PDF</a>; <a href="https://www.nature.com/articles/s41586-019-1148-9" target="_blank" rel="noopener">Nature 569, 93 (2019)</a> <a href="https://arxiv.org/pdf/1809.03076" target="_blank" rel="noopener">PDF</a>; <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.036802" target="_blank" rel="noopener">PRL 126, 036802 (2021)</a> <a href="https://arxiv.org/pdf/1906.01179" target="_blank" rel="noopener">PDF</a>;</li>
-<li>T. Zhou’s Work: <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.124.137001" target="_blank" rel="noopener">PRL 124, 137001 (2020)</a> <a href="https://www.zhouphy.com/wp-content/uploads/paper/2020-PRL-TZ.pdf" target="_blank" rel="noopener">PDF</a>; <a href="https://www.nature.com/articles/s41467-022-29463-6" target="_blank" rel="noopener">Nature Communications 13 (1), 1738-1747 (2022)</a> <a href="https://www.zhouphy.com/wp-content/uploads/paper/2022-NC-TZhou.pdf" target="_blank" rel="noopener">PDF</a></li>
-</ul>
-<h3 id="Computational-methods-1"><a href="#Computational-methods-1" class="headerlink" title="Computational methods"></a>Computational methods</h3><ul>
-<li><p>Infinite system with translation symmetry: Topological conditions, Topological invariants</p>
-<ul>
-<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/1ac4f27bf3ae108f9151d51f342245f9c8b8c06e/Codes/GroupSource/SNS-1D-inifinite_xdirection.ipynb" target="_blank" rel="noopener">GScode: SNS-1D-infinite_xdirection.ipynb</a></li>
-</ul>
-</li>
-<li><p>Finite system: Majorana zero modes</p>
-<ul>
-<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/1ac4f27bf3ae108f9151d51f342245f9c8b8c06e/Codes/GroupSource/SNS_2D_finite.ipynb" target="_blank" rel="noopener">GScode: SNS_2D_finite.ipynb</a></li>
-</ul>
-</li>
-</ul>
+                <h1 id="1-了解MarkDown文件的书写规则"><a href="#1-了解MarkDown文件的书写规则" class="headerlink" title="1. 了解MarkDown文件的书写规则"></a>1. 了解MarkDown文件的书写规则</h1><p><a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">一个简单的教程</a></p>
+<h1 id="2-Post的抬头书写"><a href="#2-Post的抬头书写" class="headerlink" title="2. Post的抬头书写"></a>2. Post的抬头书写</h1><p><code>Front-matter</code> 选项中的所有内容均为<strong>非必填</strong>的。但我仍然建议至少填写 <code>title</code> 和 <code>date</code> 的值。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>配置选项</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td><code>Markdown</code> 的文件标题</td>
+<td>文章标题，强烈建议填写此选项</td>
+</tr>
+<tr>
+<td>date</td>
+<td>文件创建时的日期时间</td>
+<td>发布时间，强烈建议填写此选项，且最好保证全局唯一</td>
+</tr>
+<tr>
+<td>author</td>
+<td>根 <code>_config.yml</code> 中的 <code>author</code></td>
+<td>文章作者</td>
+</tr>
+<tr>
+<td>img</td>
+<td><code>featureImages</code> 中的某个值</td>
+<td>文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: <code>http://xxx.com/xxx.jpg</code></td>
+</tr>
+<tr>
+<td>top</td>
+<td><code>true</code></td>
+<td>推荐文章（文章是否置顶），如果 <code>top</code> 值为 <code>true</code>，则会作为首页推荐文章</td>
+</tr>
+<tr>
+<td>cover</td>
+<td><code>false</code></td>
+<td><code>v1.0.2</code>版本新增，表示该文章是否需要加入到首页轮播封面中</td>
+</tr>
+<tr>
+<td>coverImg</td>
+<td>无</td>
+<td><code>v1.0.2</code>版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片</td>
+</tr>
+<tr>
+<td>password</td>
+<td>无</td>
+<td>文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 <code>password</code> 的值，该值必须是用 <code>SHA256</code> 加密后的密码，防止被他人识破。前提是在主题的 <code>config.yml</code> 中激活了 <code>verifyPassword</code> 选项</td>
+</tr>
+<tr>
+<td>toc</td>
+<td><code>true</code></td>
+<td>是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 <code>config.yml</code> 中激活了 <code>toc</code> 选项</td>
+</tr>
+<tr>
+<td>mathjax</td>
+<td><code>false</code></td>
+<td>是否开启数学公式支持 ，本文章是否开启 <code>mathjax</code>，且需要在主题的 <code>_config.yml</code> 文件中也需要开启才行</td>
+</tr>
+<tr>
+<td>summary</td>
+<td>无</td>
+<td>文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>无</td>
+<td>文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>无</td>
+<td>文章标签，一篇文章可以多个标签</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>文章标题</td>
+<td>文章关键字，SEO 时需要</td>
+</tr>
+<tr>
+<td>reprintPolicy</td>
+<td>cc_by</td>
+<td>文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p><strong>注意</strong>:</p>
+<ol>
+<li>如果 <code>img</code> 属性不填写的话，文章特色图会根据文章标题的 <code>hashcode</code> 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章都的特色图<strong>各有特色</strong>。</li>
+<li><code>date</code> 的值尽量保证每篇文章是唯一的，因为本主题中 <code>Gitalk</code> 和 <code>Gitment</code> 识别 <code>id</code> 是通过 <code>date</code> 的值来作为唯一标识的。</li>
+<li>如果要对文章设置阅读验证密码的功能，不仅要在 Front-matter 中设置采用了 SHA256 加密的 password 的值，还需要在主题的 <code>_config.yml</code> 中激活了配置。有些在线的 SHA256 加密的地址，可供你使用：<a href="http://tool.oschina.net/encrypt?type=2" target="_blank" rel="noopener">开源中国在线工具</a>、<a href="http://encode.chahuo.com/" target="_blank" rel="noopener">chahuo</a>、<a href="http://tool.chinaz.com/tools/hash.aspx" target="_blank" rel="noopener">站长工具</a>。</li>
+<li>您可以在文章md文件的 front-matter 中指定 reprintPolicy 来给单个文章配置转载规则</li>
+</ol>
+</blockquote>
+<p>以下为文章的 <code>Front-matter</code> 示例。</p>
+<h3 id="最简示例"><a href="#最简示例" class="headerlink" title="最简示例"></a>最简示例</h3><pre class=" language-lang-yaml"><code class="language-lang-yaml">---
+title: typora-vue-theme主题介绍
+date: 2018-09-07 09:25:00
+---
+</code></pre>
+<h3 id="最全示例"><a href="#最全示例" class="headerlink" title="最全示例"></a>最全示例</h3><pre class=" language-lang-yaml"><code class="language-lang-yaml">---
+title: typora-vue-theme主题介绍
+date: 2018-09-07 09:25:00
+author: Ettore Majorana
+img: /source/images/xxx.jpg
+top: true
+cover: true
+coverImg: /images/1.jpg
+password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+toc: false
+mathjax: false
+summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+categories: Markdown
+tags:
+  - Typora
+  - Markdown
+---
+</code></pre>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><p><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/797ec53971e7c0edad3993adc7d2215660dec306/Documents/Majorana/XZChen/articles/example.md" target="_blank" rel="noopener">example</a></p>
+<h1 id="3-推送到网站"><a href="#3-推送到网站" class="headerlink" title="3. 推送到网站"></a>3. 推送到网站</h1><p>如果需要推送你的文章到组内资源网站<a href="https://zhoueit.github.io/">ZhouGroupGS@EIT</a>，联系X.-Z. Chen (Email: xzchen@eitech.edu.cn, or Wechat), <code>在此之前需要</code> </p>
+<blockquote>
+<p><strong>注意</strong>:</p>
+<ol>
+<li>确定文章的中内容的<code>密级</code>问题（OPEN, GS, SRS）, 请联系Group Leader (T. Zhou)进行确定</li>
+<li>确保你的文章<code>拥有权</code>，重点检查你的名字</li>
+<li>文章的修饰等</li>
+</ol>
+</blockquote>
 
             </div>
             <hr/>
@@ -484,9 +581,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2024/05/15/how-to-post-your-article/">
                     <div class="card-image">
@@ -504,9 +602,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-05-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -523,6 +621,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -541,35 +640,35 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/04/22/ke-yan-xie-zuo/">
+                <a href="/2024/05/15/majorana-basics/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="科研写作">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Majorana Basics">
                         
-                        <span class="card-title">科研写作</span>
+                        <span class="card-title">Majorana Basics</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            A basic tutorial for Majorana
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-15
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%A7%91%E7%A0%94%E6%8A%80%E8%83%BD/" class="post-category">
-                                    科研技能
+                            <a href="/categories/%E7%A7%91%E7%A0%94%E6%95%99%E7%A8%8B/" class="post-category">
+                                    科研教程
                                 </a>
                             
-                            <a href="/categories/X-Z-CHEN/" class="post-category">
-                                    X.-Z. CHEN
+                            <a href="/categories/ZhouGroup/" class="post-category">
+                                    ZhouGroup
                                 </a>
                             
                             
@@ -579,8 +678,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/writting/">
-                        <span class="chip bg-color">writting</span>
+                    <a href="/tags/tutorial/">
+                        <span class="chip bg-color">tutorial</span>
                     </a>
                     
                 </div>
@@ -753,13 +852,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 </main>
 
-
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
 
 

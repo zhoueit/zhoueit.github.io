@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>ZhouGroup@EIT</title>
+  <title>ZhouGroupGS@EIT</title>
   
   <subtitle>Welcome</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhoueit.github.io/"/>
-  <updated>2024-05-15T06:02:32.000Z</updated>
+  <updated>2024-05-15T07:45:39.000Z</updated>
   <id>https://zhoueit.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to post your article?</title>
+    <link href="https://zhoueit.github.io/2024/05/15/how-to-post-your-article/"/>
+    <id>https://zhoueit.github.io/2024/05/15/how-to-post-your-article/</id>
+    <published>2024-05-15T07:45:39.000Z</published>
+    <updated>2024-05-15T07:45:39.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1-了解MarkDown文件的书写规则&quot;&gt;&lt;a href=&quot;#1-了解MarkDown文件的书写规则&quot; class=&quot;headerlink&quot; title=&quot;1. 了解MarkDown文件的书写规则&quot;&gt;&lt;/a&gt;1.
+        
+      
+    
+    </summary>
+    
+    
+      <category term="科研教程" scheme="https://zhoueit.github.io/categories/%E7%A7%91%E7%A0%94%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="X.-Z. Chen" scheme="https://zhoueit.github.io/categories/X-Z-Chen/"/>
+    
+    
+      <category term="tutorial" scheme="https://zhoueit.github.io/tags/tutorial/"/>
+    
+  </entry>
   
   <entry>
     <title>Majorana Basics</title>
