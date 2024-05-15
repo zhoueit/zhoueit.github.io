@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="X.-Z. CHEN">
+    <meta name="keywords" content="majorana">
     <meta name="description" content="Share and Win">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>科研作图 | ZhouGroup@EIT</title>
+    <title>Majorana Basics | ZhouGroup@EIT</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -202,7 +202,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -215,12 +215,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">科研作图</h1>
+                    <h1 class="description center-align post-title">Majorana Basics</h1>
                 </div>
             </div>
         </div>
@@ -337,8 +337,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/plotting/">
-                                <span class="chip bg-color">plotting</span>
+                            <a href="/tags/tutorial/">
+                                <span class="chip bg-color">tutorial</span>
                             </a>
                         
                     </div>
@@ -349,12 +349,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%A7%91%E7%A0%94%E6%8A%80%E8%83%BD/" class="post-category">
-                                科研技能
+                            <a href="/categories/%E7%A7%91%E7%A0%94%E6%95%99%E7%A8%8B/" class="post-category">
+                                科研教程
                             </a>
                         
-                            <a href="/categories/X-Z-CHEN/" class="post-category">
-                                X.-Z. CHEN
+                            <a href="/categories/ZhouGroup/" class="post-category">
+                                ZhouGroup
                             </a>
                         
                     </div>
@@ -366,14 +366,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-04-22
+                    2024-05-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2024-04-22
+                    2024-05-15
                 </div>
                 
 
@@ -392,46 +392,40 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre class=" language-lang-python"><code class="language-lang-python">import pybinding as pb
-import numpy as np
-import matplotlib.pyplot as plt
-
-pb.pltutils.use_style()
-</code></pre>
-<p><code>pb</code>习惯被用来导入pybinding。和习惯用<code>np</code>以及<code>plt</code>的用法一样。</p>
-<p>函数<code>pb.pltutils.use_style()</code>应用的是pybinding对matplotlib默认的的设置类型。画图方面是非常的个性化。</p>
-<h3 id="Lattice"><a href="#Lattice" class="headerlink" title="Lattice"></a>Lattice</h3><p><code>Lattice</code>单元是用来描述晶体晶格。其中包含了子晶格的基本的矢量，位置以及连接子晶格点的耦合参数。所有的这些信息都可以用转移来构建大系统。</p>
-<h4 id="Square-Lattice"><a href="#Square-Lattice" class="headerlink" title="Square Lattice"></a>Square Lattice</h4><p>从这些基本元素中，我们可以构建一个简单的方形格点</p>
-<pre class=" language-lang-python"><code class="language-lang-python">import pybinding as pb
-
-d = 0.2 # [nm] unit cell length
-t = 1   # [eV] hopping energy
-
-# create a simple 2D lattice with vectors a1 and a2
-lattice = pb.Lattice(a1=[d,0],a2=[0,d])
-lattice.add_sublattices(
-    ('A',[0,0]) # add an atom called 'A' at position [0,0]
-)
-lattice.add_hoppings(
-    # (relative_index, from_sublattice, to_sublattice, energy)
-    ([0,1],'A','A',t)
-    ([1,0],'A','A',t)
-)
-</code></pre>
-<p>但是这个还是不能马上看到代码干了什么。幸运的是，<code>Lattice</code>语句有一个很方面的<code>Lattice.plot()</code>方法可以很容易的看到晶格的构建。</p>
-<pre class=" language-lang-python"><code class="language-lang-python">lattice.plot() # plot the lattice that was just constructed
-plt.show()     # standard matplotlib show() function
-</code></pre>
-<p><img src="/2024/04/22/ke-yan-zuo-tu/sublattice.jpg" alt="pybinding的sublattice的构建过程"></p>
-<p>在上图中，我们看到晶格矢量$\mathbf{a}_1$和$\mathbf{a}_2$被用来去初始化<code>Lattice</code>。这些矢量描述了一个拥有无限位置设置的布拉维晶格</p>
-<script type="math/tex; mode=display">
-\mathbf{R}=n_1\mathbf{a}_1+n_2\mathbf{a}_2</script><p>这里的$n_1$和$n_2$是整数。蓝色圆圈标签为A描述了由<code>Lattice.add_sublattice()</code>方法产生的原子。渐渐的颜色消失的圆圈代表了格点在基础矢量方向的传播的格点，比如，利用整数$[n_1,n_2]$。</p>
-<p>耦合项是利用<code>Lattice.add_hopping()</code>方法指定的并且每一个耦合项是由<code>(relative_index,from_sublattice,to_sublattice,energy)</code>组成:</p>
+                <h1 id="1-Basic-knowledga-of-topology-and-quantum-computing"><a href="#1-Basic-knowledga-of-topology-and-quantum-computing" class="headerlink" title="1. Basic knowledga of topology and quantum computing"></a>1. Basic knowledga of topology and quantum computing</h1><ul>
+<li>Review paper from Roman, <a href="https://link.springer.com/article/10.1393/ncr/i2017-10141-9" target="_blank" rel="noopener">weblink</a>, <a href="https://arxiv.org/pdf/1711.00011" target="_blank" rel="noopener">PDF</a></li>
+<li>Online course on topology in condensed matter: From Kitaev chain to a nanowire, <a href="https://topocondmat.org/w2_majorana/nanowire.html" target="_blank" rel="noopener">weblink</a></li>
+</ul>
+<h2 id="1-1-Nanowire-system"><a href="#1-1-Nanowire-system" class="headerlink" title="1.1 Nanowire system"></a>1.1 Nanowire system</h2><h3 id="Computational-methods"><a href="#Computational-methods" class="headerlink" title="Computational methods:"></a>Computational methods:</h3><ul>
+<li><p>Infinite system with translational symmetry: Topological conditions, Topological invariants, <a href="https://gitlab.kwant-project.org/kwant/minicourse/-/blob/master/3_advanced_concepts.md" target="_blank" rel="noopener">weblink</a></p>
 <ul>
-<li>主要的胞元总是有指标$[n_1,n_2]=[0,0]$。<code>relative_index</code>代表从主胞元到另一个胞元需要的整数的步骤的数量。每一个胞元都有<code>relative_index</code>，就像图中所示。</li>
-<li>耦合是由<code>relative_index</code>指定的主要胞元和临近胞元产生的。两个耦合被加入了定义：$[0,1]$和$[1,0]$。相反的耦合为$[0,-1]$和$[-1,0]$是自动加入的以保持遗传性。</li>
-<li>这个晶格只由一种子晶格组成因此<code>from</code>和<code>to</code>子晶格场是琐碎的。一般来说，<code>from_sublattice</code>表示子晶格在$[0,0]$并且<code>to_sublattice</code>在临近的胞元。在后面的例子中将会进一步解释。</li>
-<li>最后的一项是耦合能量的参数。</li>
+<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/8579fee2f70a4716bfa163e8dca1775129883444/Codes/GroupSource/Nanowire_1D_finite_workshop.ipynb" target="_blank" rel="noopener">code: Nanowire_1D_inifinite_workshop.ipynb</a></li>
+<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/8579fee2f70a4716bfa163e8dca1775129883444/Codes/GroupSource/Nanowire_1D_inifinite_workshop.ipynb" target="_blank" rel="noopener">code: Nanowire_1D_finite_workshop.ipynb</a></li>
+</ul>
+</li>
+<li><p>Finite system: Majorana zero modes</p>
+<ul>
+<li><a href="https://iopscience.iop.org/article/10.1088/1367-2630/16/6/063065/pdf" target="_blank" rel="noopener">Codes in New J. Phys. 16 (2014) 063065</a></li>
+<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/8579fee2f70a4716bfa163e8dca1775129883444/Codes/GroupSource/Nanowire_1D_finite_paperexample.ipynb" target="_blank" rel="noopener">code: Nanowire_1D_finite_paperexample.ipynb</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="1-2-Planar-Josephson-junctions"><a href="#1-2-Planar-Josephson-junctions" class="headerlink" title="1.2 Planar Josephson junctions"></a>1.2 Planar Josephson junctions</h2><h3 id="Warm-up-Publications"><a href="#Warm-up-Publications" class="headerlink" title="Warm-up Publications"></a>Warm-up Publications</h3><ul>
+<li>Theory: <a href="https://journals.aps.org/prx/pdf/10.1103/PhysRevX.7.021032" target="_blank" rel="noopener">PRX 7, 021032 (2017)</a>; <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.107701" target="_blank" rel="noopener">PRL 118, 107701 (2017)</a></li>
+<li>Experiments: <a href="https://www.nature.com/articles/s41586-019-1068-8" target="_blank" rel="noopener">Nature 569, 89 (2019)</a><a href="https://arxiv.org/abs/1809.03037" target="_blank" rel="noopener">PDF</a>; <a href="https://www.nature.com/articles/s41586-019-1148-9" target="_blank" rel="noopener">Nature 569, 93 (2019)</a> <a href="https://arxiv.org/pdf/1809.03076" target="_blank" rel="noopener">PDF</a>; <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.126.036802" target="_blank" rel="noopener">PRL 126, 036802 (2021)</a> <a href="https://arxiv.org/pdf/1906.01179" target="_blank" rel="noopener">PDF</a>;</li>
+<li>T. Zhou’s Work: <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.124.137001" target="_blank" rel="noopener">PRL 124, 137001 (2020)</a> <a href="https://www.zhouphy.com/wp-content/uploads/paper/2020-PRL-TZ.pdf" target="_blank" rel="noopener">PDF</a>; <a href="https://www.nature.com/articles/s41467-022-29463-6" target="_blank" rel="noopener">Nature Communications 13 (1), 1738-1747 (2022)</a> <a href="https://www.zhouphy.com/wp-content/uploads/paper/2022-NC-TZhou.pdf" target="_blank" rel="noopener">PDF</a></li>
+</ul>
+<h3 id="Computational-methods-1"><a href="#Computational-methods-1" class="headerlink" title="Computational methods"></a>Computational methods</h3><ul>
+<li><p>Infinite system with translation symmetry: Topological conditions, Topological invariants</p>
+<ul>
+<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/1ac4f27bf3ae108f9151d51f342245f9c8b8c06e/Codes/GroupSource/SNS-1D-inifinite_xdirection.ipynb" target="_blank" rel="noopener">GScode: SNS-1D-infinite_xdirection.ipynb</a></li>
+</ul>
+</li>
+<li><p>Finite system: Majorana zero modes</p>
+<ul>
+<li><a href="https://github.com/zhoueit/ZhouGroupEIT_ResourceStore/blob/1ac4f27bf3ae108f9151d51f342245f9c8b8c06e/Codes/GroupSource/SNS_2D_finite.ipynb" target="_blank" rel="noopener">GScode: SNS_2D_finite.ipynb</a></li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -446,8 +440,8 @@ plt.show()     # standard matplotlib show() function
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/plotting/">
-                                    <span class="chip bg-color">plotting</span>
+                                <a href="/tags/tutorial/">
+                                    <span class="chip bg-color">tutorial</span>
                                 </a>
                             
                         </div>
@@ -489,9 +483,64 @@ plt.show()     # standard matplotlib show() function
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2024/05/15/majorana-basics/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Majorana Basics">
+                        
+                        <span class="card-title">Majorana Basics</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            A basic tutorial for Majorana
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-05-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A7%91%E7%A0%94%E6%95%99%E7%A8%8B/" class="post-category">
+                                    科研教程
+                                </a>
+                            
+                            <a href="/categories/ZhouGroup/" class="post-category">
+                                    ZhouGroup
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/tutorial/">
+                        <span class="chip bg-color">tutorial</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2024/04/22/ke-yan-xie-zuo/">
                     <div class="card-image">
@@ -506,59 +555,6 @@ plt.show()     # standard matplotlib show() function
                     <div class="summary block-with-text">
                         
                             
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-04-22
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%A7%91%E7%A0%94%E6%8A%80%E8%83%BD/" class="post-category">
-                                    科研技能
-                                </a>
-                            
-                            <a href="/categories/X-Z-CHEN/" class="post-category">
-                                    X.-Z. CHEN
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/writting/">
-                        <span class="chip bg-color">writting</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2024/04/22/ke-yan-zuo-tu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="科研作图">
-                        
-                        <span class="card-title">科研作图</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            测试POST，文本测试，密码测试，图片测试，代码测试
                         
                     </div>
                     <div class="publish-info">
@@ -581,12 +577,11 @@ plt.show()     # standard matplotlib show() function
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/plotting/">
-                        <span class="chip bg-color">plotting</span>
+                    <a href="/tags/writting/">
+                        <span class="chip bg-color">writting</span>
                     </a>
                     
                 </div>
