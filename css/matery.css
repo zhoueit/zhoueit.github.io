@@ -321,13 +321,13 @@ header nav .brand-span {
 }
 
 header .brand-logo .logo-img {
-    height: 45px;
+    height: 50px;
     vertical-align: middle;
     padding-bottom: 6px;
 }
 
 header .brand-logo .logo-span {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
