@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhoueit.github.io/"/>
-  <updated>2024-05-15T07:45:39.000Z</updated>
+  <updated>2024-05-17T01:51:14.000Z</updated>
   <id>https://zhoueit.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BdG Equation in tight-binding approximation</title>
+    <link href="https://zhoueit.github.io/2024/05/17/bdg-equation-in-tight-binding-approximation/"/>
+    <id>https://zhoueit.github.io/2024/05/17/bdg-equation-in-tight-binding-approximation/</id>
+    <published>2024-05-17T01:51:14.000Z</published>
+    <updated>2024-05-17T01:51:14.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;BdG-Equation-in-tight-binding-approximation&quot;&gt;&lt;a href=&quot;#BdG-Equation-in-tight-binding-approximation&quot; class=&quot;headerlink&quot; title=&quot;BdG
+        
+      
+    
+    </summary>
+    
+    
+      <category term="X.-Z. CHEN" scheme="https://zhoueit.github.io/categories/X-Z-CHEN/"/>
+    
+      <category term="科研教程" scheme="https://zhoueit.github.io/categories/%E7%A7%91%E7%A0%94%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="tutorial" scheme="https://zhoueit.github.io/tags/tutorial/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BdG Equation in different spaces</title>
+    <link href="https://zhoueit.github.io/2024/05/17/bdg-equation-in-different-spaces/"/>
+    <id>https://zhoueit.github.io/2024/05/17/bdg-equation-in-different-spaces/</id>
+    <published>2024-05-17T01:50:12.000Z</published>
+    <updated>2024-05-17T01:50:12.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>How to post your article?</title>
