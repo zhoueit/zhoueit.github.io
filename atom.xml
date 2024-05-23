@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhoueit.github.io/"/>
-  <updated>2024-05-17T01:51:14.000Z</updated>
+  <updated>2024-05-23T07:23:17.000Z</updated>
   <id>https://zhoueit.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Add disorder by Kwant</title>
+    <link href="https://zhoueit.github.io/2024/05/23/add-disorder-by-kwant/"/>
+    <id>https://zhoueit.github.io/2024/05/23/add-disorder-by-kwant/</id>
+    <published>2024-05-23T07:23:17.000Z</published>
+    <updated>2024-05-23T07:23:17.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Add-disorder-by-Kwant&quot;&gt;&lt;a href=&quot;#Add-disorder-by-Kwant&quot; class=&quot;headerlink&quot; title=&quot;Add disorder by Kwant&quot;&gt;&lt;/a&gt;Add disorder by
+        
+      
+    
+    </summary>
+    
+    
+      <category term="X.-Z. CHEN" scheme="https://zhoueit.github.io/categories/X-Z-CHEN/"/>
+    
+      <category term="计算方法" scheme="https://zhoueit.github.io/categories/%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/"/>
+    
+    
+      <category term="kwant" scheme="https://zhoueit.github.io/tags/kwant/"/>
+    
+  </entry>
   
   <entry>
     <title>BdG Equation in tight-binding approximation</title>
