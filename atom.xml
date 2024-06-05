@@ -212,7 +212,7 @@
   </entry>
   
   <entry>
-    <title>科研作图</title>
+    <title>Publication-ready package —— PyX</title>
     <link href="https://zhoueit.github.io/2024/04/22/ke-yan-zuo-tu/"/>
     <id>https://zhoueit.github.io/2024/04/22/ke-yan-zuo-tu/</id>
     <published>2024-04-22T07:32:41.000Z</published>
@@ -224,9 +224,7 @@
       
         
         
-          &lt;pre class=&quot; language-lang-python&quot;&gt;&lt;code class=&quot;language-lang-python&quot;&gt;import pybinding as pb
-import numpy as np
-import matplotlib.pyplot as
+          &lt;h1 id=&quot;Publication-ready-package-——-PyX&quot;&gt;&lt;a href=&quot;#Publication-ready-package-——-PyX&quot; class=&quot;headerlink&quot; title=&quot;Publication-ready package
         
       
     
