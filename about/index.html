@@ -218,7 +218,18 @@
 
             <div class="description center-align">
                 
-                    Zhou Group Source Store at EIT, Ningbo
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['欢迎来到东方理工周通课题组（www.zhouphy.com）资源库','Welcome to Prof. Tong Zhou Group (www.zhouphy.com) Source website!'],
+                        startDelay: 300,
+                        typeSpeed: 50,
+                        loop: true,
+                        backSpeed: 20,
+                        showCursor: true
+                    });
+                </script>
                 
             </div>
         </div>
@@ -243,14 +254,14 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">8</a></span>
+    <span class="count"><a href="/">9</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">5</a></span>
+    <span class="count"><a href="/categories">6</a></span>
     <span class="name">分类</span>
 </div>
 
@@ -273,14 +284,14 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">8</a></span>
+    <span class="count"><a href="/">9</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">5</a></span>
+    <span class="count"><a href="/categories">6</a></span>
     <span class="name">分类</span>
 </div>
 
@@ -405,7 +416,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2023-06","2023-07","2023-08","2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06"]
+            data: ["2023-09","2023-10","2023-11","2023-12","2024-01","2024-02","2024-03","2024-04","2024-05","2024-06","2024-07","2024-08","2024-09"]
         },
         yAxis: {
             type: 'value',
@@ -415,7 +426,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,2,6,0],
+                data: [0,0,0,0,0,0,0,2,6,0,0,0,1],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -457,7 +468,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"科研技能","value":2},{"name":"X.-Z. CHEN","value":7},{"name":"科研教程","value":4},{"name":"ZhouGroup","value":1},{"name":"计算方法","value":2}],
+                data: [{"name":"科研技能","value":2},{"name":"X.-Z. CHEN","value":7},{"name":"科研教程","value":4},{"name":"ZhouGroup","value":2},{"name":"计算方法","value":2},{"name":"科研画图","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -481,7 +492,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Majorana","writting","plotting","kwant","server"]
+                data: ["Majorana","writting","kwant","plotting","server"]
             }
         ],
         yAxis: [
@@ -494,7 +505,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [3,2,1,1,1],
+                data: [3,2,2,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -723,6 +734,24 @@
         </div>
         
         <div class="photo col s12 m6 l4" data-aos="fade-up">
+            <div class="img-item" data-src="/medias/personal/202409-1.jpg">
+                <img src="/medias/personal/202409-1.jpg" class="responsive-img">
+            </div>
+        </div>
+        
+        <div class="photo col s12 m6 l4" data-aos="fade-up">
+            <div class="img-item" data-src="/medias/personal/202409-0.jpg">
+                <img src="/medias/personal/202409-0.jpg" class="responsive-img">
+            </div>
+        </div>
+        
+        <div class="photo col s12 m6 l4" data-aos="fade-up">
+            <div class="img-item" data-src="/medias/personal/0.jpg">
+                <img src="/medias/personal/0.jpg" class="responsive-img">
+            </div>
+        </div>
+        
+        <div class="photo col s12 m6 l4" data-aos="fade-up">
             <div class="img-item" data-src="/medias/personal/2.jpg">
                 <img src="/medias/personal/2.jpg" class="responsive-img">
             </div>
@@ -731,24 +760,6 @@
         <div class="photo col s12 m6 l4" data-aos="fade-up">
             <div class="img-item" data-src="/medias/personal/3.jpg">
                 <img src="/medias/personal/3.jpg" class="responsive-img">
-            </div>
-        </div>
-        
-        <div class="photo col s12 m6 l4" data-aos="fade-up">
-            <div class="img-item" data-src="/medias/personal/4.jpg">
-                <img src="/medias/personal/4.jpg" class="responsive-img">
-            </div>
-        </div>
-        
-        <div class="photo col s12 m6 l4" data-aos="fade-up">
-            <div class="img-item" data-src="/medias/personal/5.jpg">
-                <img src="/medias/personal/5.jpg" class="responsive-img">
-            </div>
-        </div>
-        
-        <div class="photo col s12 m6 l4" data-aos="fade-up">
-            <div class="img-item" data-src="/medias/personal/6.jpg">
-                <img src="/medias/personal/6.jpg" class="responsive-img">
             </div>
         </div>
         

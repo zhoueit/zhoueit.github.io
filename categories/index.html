@@ -211,7 +211,18 @@
 
             <div class="description center-align">
                 
-                    Zhou Group Source Store at EIT, Ningbo
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['欢迎来到东方理工周通课题组（www.zhouphy.com）资源库','Welcome to Prof. Tong Zhou Group (www.zhouphy.com) Source website!'],
+                        startDelay: 300,
+                        typeSpeed: 50,
+                        loop: true,
+                        backSpeed: 20,
+                        showCursor: true
+                    });
+                </script>
                 
             </div>
         </div>
@@ -268,11 +279,11 @@
                 </a>
                 
                 
-                <a href="/categories/ZhouGroup/" title="ZhouGroup: 1">
+                <a href="/categories/ZhouGroup/" title="ZhouGroup: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #E8F8F5;">ZhouGroup
-                        <span class="tag-length">1</span>
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -282,6 +293,15 @@
                              chip-default "
                             style="background-color: #FEF9E7;">计算方法
                         <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E7%A7%91%E7%A0%94%E7%94%BB%E5%9B%BE/" title="科研画图: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F8F9F9;">科研画图
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -328,7 +348,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"科研技能","max":8},{"name":"X.-Z. CHEN","max":8},{"name":"科研教程","max":8},{"name":"ZhouGroup","max":8},{"name":"计算方法","max":8}],
+            indicator: [{"name":"科研技能","max":8},{"name":"X.-Z. CHEN","max":8},{"name":"科研教程","max":8},{"name":"ZhouGroup","max":8},{"name":"计算方法","max":8},{"name":"科研画图","max":8}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -339,7 +359,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [2,7,4,1,2],
+                    value : [2,7,4,2,2,1],
                     name : '文章分类数量'
                 }
             ]
