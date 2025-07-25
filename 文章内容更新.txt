@@ -1,9 +1,0 @@
-1. 关于Majorana基础知识，链接请见：https://zhoueit.github.io/2024/05/15/majorana-basics/，访问密码：gs515;
-2. 关于怎样发表组内文章的教程，链接请见：https://zhoueit.github.io/2024/05/15/how-to-post-your-article/，访问密码：无；
-3. 服务器得使用和批量提交程序，链接：https://zhoueit.github.io/2024/05/24/instructions-to-server-usage/，密码：gsxz524; 
-4. 在Kwant中加入不同类型disorder的方法，链接：
- https://zhoueit.github.io/2024/05/23/add-disorder-by-kwant/, 密码：gsxz523;
-5.  紧束缚模型求解BdG方程，链接：https://zhoueit.github.io/2024/05/17/bdg-equation-in-tight-binding-approximation/，密码：gsxz517; 
-6. 不同空间的BdG（s波，p波）方程，链接：https://zhoueit.github.io/2024/05/17/bdg-equation-in-different-spaces/，密码：gsxz517b; 
-7. 作图软件Pyx简介，链接：https://zhoueit.github.io/2024/04/22/ke-yan-zuo-tu/，密码：gsxz422
-8. (NEW) 可编辑的文章示意图，链接：https://zhoueit.github.io/2024/09/25/schematic-figures-examples/，密码：gs925
